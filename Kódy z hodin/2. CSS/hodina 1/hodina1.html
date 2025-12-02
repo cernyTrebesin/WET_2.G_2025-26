@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Základy CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yarndings+20&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hodina1.css"> <!-- Propojení s externím souborem -->
+    <style>
+        body{
+            background-color: aqua; /* Barva pozadí */
+        }
+        p{ /*Elementární selektor*/
+            color: blueviolet;
+        }
+
+        .g2{ /*Class*/
+            color: green;
+            font-family: "Yarndings 20", system-ui;/*Změna fontu*/
+        }
+        
+        #trebesin{ /*Identifikátor*/
+            color: orange; /* barva písma */
+            font-weight: bold; /*Tučnost*/
+            font-style: italic; /*Kurzíva*/
+            text-decoration: wavy underline; /*Podrtžené*/
+        }
+    </style> <!--Interní zápis-->
+</head>
+<body>
+    <p style="color: red;"> <!-- Inline zápis -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque, cupiditate, voluptates natus rem maxime dicta delectus consectetur iure eligendi iste assumenda, temporibus incidunt nostrum molestias nam minus et dolore.
+    </p>
+    <p class="g2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis illum rem dolor. Et quo, est iure soluta ad atque dicta reprehenderit veniam dolorem doloremque sequi qui vero quasi officia.
+    </p>
+    <p class="g2" id="trebesin">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia explicabo enim quia exercitationem iste hic unde aliquid. Totam odit sit eligendi ducimus, voluptatem rerum ad culpa autem praesentium placeat excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non maiores illo id, quia corporis animi adipisci voluptate dolor accusamus deleniti molestias hic odio molestiae? Atque, molestias voluptatibus. Praesentium, harum pariatur!
+    </p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudotřídy a pseudoelementy</title>
+    <style>
+        a:visited{ /* Navštívený odkaz */
+            color: red;
+        }
+        a:link{ /* Nenavštívený odkaz */
+            color: green;
+        }
+        a:hover{
+            color: black
+        }
+        a:active{
+            color: orange;
+        }
+        
+        li:first-child{
+            background-color: aqua;
+        }
+        li:last-child{
+            background-color: brown;
+        }
+        li:nth-child(2n-1){
+            background-color: orange;
+        }
+        p::first-letter{
+            font-size: 50px;
+            color: aqua;
+        }
+        p::first-line{
+            background-color: blue;
+        }
+        p::selection{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.trebesin.cz/">Toto je odkaz na Třebešín</a>
+    <br>
+    <a href="https://www.google.cz">Toto je odkaz na Google</a>
+    <ul>
+        <li>Pizza Hawai</li>
+        <li>Hamburger s banánem</li>
+        <li>Okurka s Nutelou</li>
+        <li>Jablko s banánem</li>
+        <li>Polévka s kečupem</li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus tempora sed reiciendis dolores laboriosam ab quia, vitae voluptatem distinctio possimus maxime fuga hic officia voluptas, nisi a nihil eius?</p>
+</body>
+</html>
