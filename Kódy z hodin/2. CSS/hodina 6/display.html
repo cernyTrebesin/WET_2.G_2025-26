@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        h1, b{
+            background-color: orange;
+        }
+        h1{
+            display: none;
+            
+        }
+        b{
+            display: inline-block; 
+            /*inline-block: nezačínají na novém řádku, lze nastavit výšku a šířku*/
+            /*none: schová mi daný element*/
+            width: 200px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Block-level element</h1> <!--Block-level zabýrá celou šířku stránky a začíná na novém řádku--> 
+    ahoj 
+    <b>Inline element</b> <!--Inline element zabýrá pouze tolik místa, kolik potřebuje-->
+    sbohem 
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .maly{
+            border: solid black;
+            width: 30px;
+            height: 30px;
+        }
+        #velky{
+            width: 95%;
+            height: 420px;
+            border: solid black;
+            display: flex;
+            flex-direction: row; /*Výběr hlavní osy*/
+            justify-content: space-around; /*Rozložení na hlavní ose*/
+            align-items: start; /*Rozložení na vedlejší ose*/
+            column-gap: 50px; /*Mezery mezi bloky (sloupec)*/
+            flex-wrap: wrap; /*Řádkování*/
+            row-gap: 20px; /*Mezery mezi bloky (řádek)*/
+            align-content: center; /*Řádkové rozložení na vedlejší ose*/
+        }   
+
+        #box5{
+            order: 1; /*Pořadí*/
+            align-self: flex-start; /*Rozložení na stránce pro jeden prvek*/
+        }
+        #box2{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="velky">
+        <div class="maly" id="box1">1</div>
+        <div class="maly" id="box2">2</div>
+        <div class="maly" id="box3">3</div>
+        <div class="maly" id="box4">4</div>
+        <div class="maly" id="box5">5</div>
+        <div class="maly" id="box6">6</div>
+    </div>
+</body>
+</html>
