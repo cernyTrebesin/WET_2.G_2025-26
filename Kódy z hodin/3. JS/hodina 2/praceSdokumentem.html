@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práce s HTML dokumentem</title>
+</head>
+<body>
+    <p id="text">WET je můj nejoblíbenější předmět</p>
+
+    <script>
+        let text = document.querySelector("#text") // Propojení prvku s JS
+        // let text = document.getElementById("text") - alternativní propojení (pouze na id)
+
+        text.style.color = "orange"
+        text.style.backgroundColor = "black"
+        text.style.fontSize = "50px"
+        text.innerText = "Matematika je můj nejoblíbenější předmět"
+    </script>
+</body>
+</html>
