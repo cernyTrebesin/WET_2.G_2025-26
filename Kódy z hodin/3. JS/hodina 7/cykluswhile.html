@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyklus while</title>
+</head>
+<body>
+    <script>
+        /* Přihlášení
+
+        let username = "cerny"
+        let heslo = "Heslo79it"
+        let odpoved = "Pes"
+        let vstupUsername = window.prompt("Zadej username")
+        let vstupHeslo = window.prompt("Zadej heslo")
+        let vstupOdpoved = window.prompt("Jaké je tvé oblíbené zvíře")
+        while(vstupUsername != username || vstupHeslo != heslo || vstupOdpoved != odpoved){
+            vstupUsername = window.prompt("Zadej username")
+            vstupHeslo = window.prompt("Zadej heslo")
+            vstupOdpoved = window.prompt("Jaké je tvé oblíbené zvíře")
+        }
+
+        alert("Úspěšně jste se přihlásili")
+        */
+
+        let suma = 0
+        let cislo = parseFloat(window.prompt("Zadej číslo"))
+
+        while(cislo != 0){
+            suma += cislo // suma = suma + cislo
+            cislo = parseFloat(window.prompt("Zadej číslo"))
+        }
+
+        alert(suma)
+    </script>
+</body>
+</html>

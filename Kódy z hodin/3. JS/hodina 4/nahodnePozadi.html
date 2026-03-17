@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Náhodné pozadí</title>
+    
+</head>
+<body>
+    <button type="button" id="tlacitko">Změn barvu</button>
+
+    <script>
+        let tlacitko = document.querySelector("#tlacitko")
+        let pozadi = document.querySelector("body")
+        tlacitko.addEventListener("click", zmenaBarvy)
+
+        function zmenaBarvy(){
+            let nahodne = Math.floor(Math.random()*6)
+            
+            if(nahodne == 0){
+                pozadi.style.backgroundColor = "red"
+            }else if(nahodne == 1){
+                pozadi.style.backgroundColor = "blue"
+            }else if(nahodne == 2){
+                pozadi.style.backgroundColor = "green"
+            }else if(nahodne == 3){
+                pozadi.style.backgroundColor = "orange"
+            }else if(nahodne == 4){
+                pozadi.style.backgroundColor = "white"
+            }else if(nahodne == 5){
+                pozadi.style.backgroundColor = "purple"
+            }
+        }
+    </script>
+</body>
+</html>

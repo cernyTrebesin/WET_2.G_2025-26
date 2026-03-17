@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podmínky</title>
+    <script>
+        /*let a = 26
+        if(a == 1 && a == 26){
+            alert("Podmínka byla pravdivá")
+        }else if(a == 10){
+            alert("Druhá podmínka byla pravdivá")
+        }else{
+            alert("Nic předtím nebyla pravda")
+        }*/
+        // Absolutní hodnota
+        /*
+        let cislo = parseFloat(window.prompt("Zadej číslo"))
+        if(cislo >= 0){
+            alert(cislo)
+        }else{
+            alert(cislo * (-1))
+        }*/
+
+        let den = parseInt(window.prompt("Zadej den v týdnu (číslo)"))
+        switch(den){
+            case 1:
+            case 8:
+                alert("Pondělí")
+                break
+            case 2:
+                alert("Úterý")
+                break
+            case 3:
+                alert("Středa")
+                break
+            case 4:
+                alert("Čtvrtek")
+                break
+            case 5:
+                alert("Pátek")
+                break
+            case 6:
+                alert("Sobota")
+                break
+            case 7:
+                alert("Neděle")
+                break
+            default:
+                alert("Zadej číslo od 1 do 7")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

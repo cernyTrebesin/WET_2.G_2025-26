@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vek = parseInt(window.prompt("Zadej svůj věk"))
+        let pocet = parseInt(window.prompt("Zadej počet lístků"))
+        let pop = window.prompt("Chcete popcorn?")
+        let cenuListku = 0
+        let celkem = 0
+        if(vek < 12){
+            cenuListku = 150
+        }else if(vek <= 17){
+            cenuListku = 200
+        }else{
+            cenuListku = 250
+        }
+
+        if(pocet >= 4){
+            celkem = cenuListku * pocet * 0.9
+        }else{
+            celkem = cenuListku * pocet
+        }
+
+        if(pop == "ano"){
+            celkem += 80
+        }
+
+        alert(celkem)
+        
+    </script>
+</body>
+</html>

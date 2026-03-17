@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkce</title>
+</head>
+<body>
+    <script>
+        /* Vysvětlení funkcí
+        function Spytihněv(jmeno, prijmeni){
+            return "Ahoj " + jmeno + " " + prijmeni
+            
+        }
+        
+        let a = Spytihněv("Tomáš", "Černý")
+        alert(Spytihněv("Spytihněv", "Kvítko"))
+        */
+
+        /* Funkce na součet čísel
+        function suma(cislo1, cislo2){
+            return cislo1 + cislo2
+        }
+        let a = parseFloat(window.prompt("Zadej první číslo"))
+        let b = parseFloat(window.prompt("Zadej druhé číslo"))
+        alert(suma(a,b))
+        */
+        /* Funkce na sudé a liché číslo
+       function sudeLiche(cislo){
+            if(cislo % 2 == 0){
+                return "sude"
+            }else{
+                return "liche"
+            }
+       }
+       let a = parseInt(window.prompt("Zadej číslo"))
+       alert(sudeLiche(a))
+        */
+        // <-10;10)
+        function interval(cislo){
+            if(cislo >= -10 && cislo < 10){
+                return true
+            }else{
+                return false
+            }
+        }
+        let a = parseFloat(window.prompt("Zadej číslo"))
+        alert(interval(a))
+    </script>
+</body>
+</html>
