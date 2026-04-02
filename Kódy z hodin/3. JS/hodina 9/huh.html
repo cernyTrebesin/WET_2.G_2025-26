@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Jak moc máte rádi WET?</h1>
+    <form>
+      <input type="text" id="text" />
+    </form>
+    <button id="send">Odeslat</button>
+    <p id="vysledek"></p>
+
+
+
+
+    
+    <script>
+      function srdce() {
+        let pocet = document.getElementById("text").value
+        let out = ""
+        for (let i = 0; i < pocet; i++) {
+          out += "❤️"
+        }
+        document.getElementById("vysledek").innerText = out
+      }
+
+      let tlacitko = document.getElementById("send")
+      tlacitko.addEventListener("click", srdce)
+    </script>
+  </body>
+</html>

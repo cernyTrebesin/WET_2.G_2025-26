@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srdíčka</title>
+</head>
+<body>
+    <h1>Jak moc máte rádi WET?</h1>
+    <input type="text" id="pocet">
+    <button id="tlacitko">Odeslat</button>
+    <p id="vysledek"></p>
+
+    <script>
+        let vystup = document.getElementById("vysledek")
+        let tlacitko = document.getElementById("tlacitko")
+        tlacitko.addEventListener("click", bořivoj)
+
+        function bořivoj(){
+            let pocet = Number(document.getElementById("pocet").value)
+            vystup.innerText = ""
+            for(let i = 0; i < pocet ; i++){
+                vystup.innerText += "❤️"
+            }
+        }
+
+
+    </script>
+</body>
+</html>
